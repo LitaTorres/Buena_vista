@@ -1,0 +1,52 @@
+<%= form_with(model: service) do |form| %>
+  <% if service.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(service.errors.count, "error") %> prohibited this service from being saved:</h2>
+
+      <ul>
+        <% service.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :pool, style: "display: block" %>
+    <%= form.text_field :pool %>
+  </div>
+
+  <div>
+    <%= form.label :barbecue, style: "display: block" %>
+    <%= form.text_field :barbecue %>
+  </div>
+
+  <div>
+    <%= form.label :gym, style: "display: block" %>
+    <%= form.text_field :gym %>
+  </div>
+
+  <div>
+    <%= form.label :green_areas, style: "display: block" %>
+    <%= form.text_field :green_areas %>
+  </div>
+
+  <div>
+    <%= form.label :childish_games, style: "display: block" %>
+    <%= form.text_field :childish_games %>
+  </div>
+
+  <div>
+    <%= form.label :parking_lots, style: "display: block" %>
+    <%= form.text_field :parking_lots %>
+  </div>
+
+  <div>
+    <%= form.label :pet_friendly, style: "display: block" %>
+    <%= form.text_field :pet_friendly %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pool: MyString
+  barbecue: MyString
+  gym: MyString
+  green_areas: MyString
+  childish_games: MyString
+  parking_lots: MyString
+  pet_friendly: MyString
+
+two:
+  pool: MyString
+  barbecue: MyString
+  gym: MyString
+  green_areas: MyString
+  childish_games: MyString
+  parking_lots: MyString
+  pet_friendly: MyString
